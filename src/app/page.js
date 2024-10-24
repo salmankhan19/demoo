@@ -9,7 +9,8 @@ import { fetchTabs } from "./utils/fetchTabs";
 const fallbackTabs = [
   {
     label: "Industry experts",
-    value: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, recusandae nesciunt. Mollitia quidem.",
+    value:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, recusandae nesciunt. Mollitia quidem.",
   },
   {
     label: "Dedicated Team",
@@ -62,15 +63,19 @@ export default function ChooseUsSection() {
 
         <div className="flex flex-col lg:flex-row gap-8 items-center justify-between">
           <div className="flex justify-center items-center p-4">
-            <div className="relative flex items-center">
+            <div className="relative flex items-center place-content-center">
               {currentTabs.length > 0 && (
                 <div className="circle bg-red-500 z-10 shadow-md">
                   <div className="content text-white p-6 text-center">
-                    <h2 className="text-xl font-bold mb-2">
-                      {currentTabs[activeTab].label ? currentTabs[activeTab].label : "Tab Label Here"}
+                    <h2 className="text-xl  font-bold mb-2 max-xs:text-[12px]">
+                      {currentTabs[activeTab].label
+                        ? currentTabs[activeTab].label
+                        : "Tab Label Here"}
                     </h2>
-                    <p className="text-sm">
-                      {currentTabs[activeTab].value ? currentTabs[activeTab].value : "Tab Value Here"}
+                    <p className="text-sm max-xs:text-[12px]">
+                      {currentTabs[activeTab].value
+                        ? currentTabs[activeTab].value
+                        : "Tab Value Here"}
                     </p>
                   </div>
                 </div>

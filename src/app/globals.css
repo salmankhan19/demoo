@@ -34,3 +34,10 @@ body {
     height: 250px;
   }
 }
+@media (max-width: 500px) {
+  .circle {
+    width: 175px;
+    height: 175px;
+  }
+}
+
