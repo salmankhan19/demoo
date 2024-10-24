@@ -67,12 +67,12 @@ export default function ChooseUsSection() {
               {currentTabs.length > 0 && (
                 <div className="circle bg-red-500 z-10 shadow-md">
                   <div className="content text-white p-6 text-center">
-                    <h2 className="text-xl  font-bold mb-2 max-xs:text-[12px]">
+                    <h2 className="text-xl  font-bold mb-2 label">
                       {currentTabs[activeTab].label
                         ? currentTabs[activeTab].label
                         : "Tab Label Here"}
                     </h2>
-                    <p className="text-sm max-xs:text-[12px]">
+                    <p className="text-sm value">
                       {currentTabs[activeTab].value
                         ? currentTabs[activeTab].value
                         : "Tab Value Here"}

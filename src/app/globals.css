@@ -39,5 +39,11 @@ body {
     width: 175px;
     height: 175px;
   }
+  .value{
+    font-size: 10px !important;
+  }
+  .label{
+    font-size: 10px !important;
+  }
 }
 
